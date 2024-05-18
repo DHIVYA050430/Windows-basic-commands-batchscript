@@ -26,62 +26,31 @@ Execute the necessary commands/batch file for the desired output.
 # WINDOWS COMMANDS:
 ## Exercise 1: Basic Directory and File Operations
 Create a directory named "MyLab" on the desktop.
-
-mkdir %userprofile%\Desktop\Mylab
-
-![COM 1](https://github.com/DHIVYA050430/Windows-basic-commands-batchscript/assets/147141546/f3f94b18-b3ae-4a9b-8d9d-cf0728129c2c)
 Change to the "MyLab" directory and create an empty text file named "MyFile.txt" inside it.
+List the contents of the "MyLab" directory.
+
+![WhatsApp Image 2024-05-18 at 14 07 09_6c481685](https://github.com/DHIVYA050430/Windows-basic-commands-batchscript/assets/147141546/e06c2a97-a95d-4d62-bc25-49da9a735b40)
 
 ## COMMAND AND OUTPUT
-
-List the contents of the "MyLab" directory.
-
-cd %userprofile%\Desktop\MyLab
-![COM 2 1](https://github.com/DHIVYA050430/Windows-basic-commands-batchscript/assets/147141546/eb63632e-399d-414f-8cd5-58bfa2cbe9c5)
-![COM 2 2](https://github.com/DHIVYA050430/Windows-basic-commands-batchscript/assets/147141546/97315119-fc06-4940-89d3-aeaeed1184a3)
+Copy "MyFile.txt" to a new folder named "Backup" on the desktop.
+![WhatsApp Image 2024-05-18 at 14 07 27_efe3b594](https://github.com/DHIVYA050430/Windows-basic-commands-batchscript/assets/147141546/56500cd6-5335-4906-9cea-48699d0327ef)
 
 ## COMMAND AND OUTPUT
-
-Copy "MyFile.txt" to a new folder named "Backup" on the desktop.
-dir %userprofile%\Desktop\MyLab
-![COM 3](https://github.com/DHIVYA050430/Windows-basic-commands-batchscript/assets/147141546/43b2c284-d36f-4f60-9289-ed9f1e0d0331)
-
-
-
-## COMMAND AND OUTPUT
-
-Move the "MyLab" directory to the "Documents" folder.
-mkdir %userprofile%\Desktop\Backup
-copy MyFile.txt %userprofile%\Desktop\Backup
-![COM 3 2](https://github.com/DHIVYA050430/Windows-basic-commands-batchscript/assets/147141546/cd0c480b-a552-44b4-9ede-ea6740f9f5f9)
-
-![COM 4](https://github.com/DHIVYA050430/Windows-basic-commands-batchscript/assets/147141546/7f240e98-4c72-4b2b-ae87-27b01db5794d)
-
-## COMMAND AND OUTPUT
-mv Myfile.txt %userprofile%\Documents
-![7](https://github.com/DHIVYA050430/Windows-basic-commands-batchscript/assets/147141546/ff76c4f1-bdcd-4a43-a5d0-d3fd3451b9d7)
+Move the "MyLab" directory to the "Documents" folder.
+![WhatsApp Image 2024-05-18 at 14 07 43_8db430fc](https://github.com/DHIVYA050430/Windows-basic-commands-batchscript/assets/147141546/f710b8f6-cc65-4558-b3da-83f5b7a17a05)
 
 
 ## Exercise 2: Advanced Batch Scripting
-Create a batch script named "BackupScript.bat" that creates a backup of files with the ".docx" extension from the
-"Documents" folder to a new folder named "DocBackup" on the desktop.
-```
-@echo off
-mkdir %userprofile%\Desktop\DocBackup
-copy %userprofile%\Documents\*.docx %userprofile%\Desktop\DocBackup
-echo Backup completed successfully!
-```
-Modify the script to delete files with the ".docx" extension from the "Documents" folder after creating the backup.
-```
-@echo off
-mkdir %userprofile%\Desktop\DocBackup
-copy %userprofile%\Documents\*.docx %userprofile%\Desktop\DocBackup
-del %userprofile%\Documents\*.docx
-echo Backup and deletion completed successfully!
-```
+Create a batch script named "BackupScript.bat" that creates a backup of files with the ".docx" extension from the "Documents" folder to a new folder named "DocBackup" on the desktop.
 
 ## OUTPUT
-![OUTPUT COM](https://github.com/DHIVYA050430/Windows-basic-commands-batchscript/assets/147141546/e2960f41-c52c-45ec-9701-586a6ca42eae)
+![WhatsApp Image 2024-05-18 at 14 07 59_3fb43cf0](https://github.com/DHIVYA050430/Windows-basic-commands-batchscript/assets/147141546/b583f0ad-8e00-4bac-b168-ccd4328ccaeb)
+
+![WhatsApp Image 2024-05-18 at 14 08 06_5c70d770](https://github.com/DHIVYA050430/Windows-basic-commands-batchscript/assets/147141546/8ffb4f80-1643-403b-80fc-6cb28eaca673)
+
+## RESULT
+The commands/batch files are executed successfully.
+
 
 
 
